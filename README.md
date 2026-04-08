@@ -113,31 +113,6 @@ Acesse: `http://localhost:8080`
 
 ---
 
-## Publicação no GitHub
-
-```bash
-# 1. Inicializar repositório
-git init
-git add .
-git commit -m "feat: sistema de cadastro de funcionários em PHP + PostgreSQL"
-
-# 2. Criar repositório no GitHub e conectar
-git remote add origin https://github.com/seu-usuario/cadastro-funcionarios.git
-git branch -M main
-git push -u origin main
-```
-
-> **Atenção**: Antes de publicar, certifique-se de **não commitar credenciais reais** no `db.php`. Use um `.env` ou variáveis de ambiente em produção.
-
----
-
-## .gitignore sugerido
-
-```
-# Ignorar configurações sensíveis
-includes/db.php
-
-# Ignorar arquivos do sistema
 .DS_Store
 Thumbs.db
 *.log
